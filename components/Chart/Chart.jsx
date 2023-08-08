@@ -45,12 +45,7 @@ const Chart = () => {
         <Loading />
       ) : (
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart
-            width={600}
-            height={300}
-            data={data}
-            margin={{ bottom: 50 }}
-          >
+          <BarChart data={data} margin={{ bottom: 50 }} height={400}>
             <YAxis />
             <XAxis dataKey="name" />
             <Tooltip />

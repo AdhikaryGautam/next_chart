@@ -7,6 +7,8 @@ const useGetData = () => {
   const [chartData, setChartData] = useState();
   const [loading, setLoading] = useState(true);
 
+  console.log("render ");
+
   const getData = async () => {
     console.log("fetched data");
     const response = await axios.get(
@@ -19,8 +21,6 @@ const useGetData = () => {
 
   useEffect(() => {
     getData();
-  }, []);
-  useEffect(() => {
     const fetchInterval = setInterval(() => {
       getData();
     }, 5000);
