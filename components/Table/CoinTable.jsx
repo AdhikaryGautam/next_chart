@@ -1,12 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import useGetData from "@/hooks/useGetData";
 import Loading from "../Loading";
 import TableHead from "./TableHead";
 
-const CoinTable = () => {
-  const { loading, chartData } = useGetData();
+const CoinTable = ({ loading, chartData }) => {
   const [data, setData] = useState(chartData?.bpi || {});
   const [currentFilter, setCurrentFilter] = useState("code");
 

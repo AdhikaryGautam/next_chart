@@ -1,7 +1,5 @@
 "use client";
 
-import useGetData from "@/hooks/useGetData";
-import { useEffect } from "react";
 import {
   BarChart,
   Bar,
@@ -28,9 +26,7 @@ const formatData = (data) => {
   return dataArray;
 };
 
-const Chart = () => {
-  const { chartData, loading } = useGetData();
-
+const Chart = ({ loading, chartData }) => {
   let data = [];
   if (chartData) {
     data = formatData(chartData.bpi);
