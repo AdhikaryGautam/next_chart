@@ -65,7 +65,7 @@ const CoinTable = () => {
           <caption className="text-start  py-4 border-b border-neutral-200">
             <h3 className="text-xl font-bold ">Bitcoin Price Table</h3>
           </caption>
-          <thead className="border-b font-medium dark:border-neutral-500">
+          <thead className="border-b font-medium">
             <tr className="flex-col sm:flex-row">
               <TableHead
                 title={"Code"}
