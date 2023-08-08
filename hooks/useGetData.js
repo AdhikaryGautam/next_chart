@@ -7,10 +7,7 @@ const useGetData = () => {
   const [chartData, setChartData] = useState();
   const [loading, setLoading] = useState(true);
 
-  console.log("render ");
-
   const getData = async () => {
-    console.log("fetched data");
     const response = await axios.get(
       "https://api.coindesk.com/v1/bpi/currentprice.json"
     );
