@@ -57,7 +57,7 @@ const CoinTable = () => {
   }, [chartData]);
 
   return (
-    <div className="basis-1/2 flex flex-col shadow-box-shadow bg-white h-fit min-h-[400px] px-6 items-center ">
+    <div className="basis-1/2 flex flex-col shadow-box-shadow bg-white h-fit min-h-[400px] px-6 items-center justify-center">
       {loading ? (
         <Loading />
       ) : (
